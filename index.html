@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="programiz.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="transition1.html">alt</a>
+        <a href="programiz.html">3 oldal</a>
+        <a href="https://media.discordapp.net/attachments/1308165632360976500/1309486570411135016/IMG_3276.png?ex=67903327&is=678ee1a7&hm=af379c58bcf8dbd0a6438eed863b09e8e6b3a82fc9045b3e6669c0a8a2a38cf0&=&format=webp&quality=lossless&width=589&height=592">Deme Zalánka</a>
+      </nav>
+
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+    <label for="theme-toggle"></label>
+    <p>Szeretem a tejet!</p>
+
+    
+
+    <script>
+        const checkbox = document.getElementById('theme-toggle');
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+        });
+    </script>
+</body>
+</html>
